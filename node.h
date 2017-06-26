@@ -11,6 +11,7 @@
 #include <iostream>
 //declaration tree with template
 template <typename T> class Tree;
+template<typename T> class LinkedList;
 //declaration class node with templates
 template <typename T>
 
@@ -18,6 +19,7 @@ class Node
 {
     //class tree is fried from class Node
     friend class Tree<T>;
+    friend class LinkedList<T>;
 public:
     Node(T &dd)
         :data(dd),leftPtr(nullptr),reightPtr(nullptr){}
